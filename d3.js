@@ -34,7 +34,7 @@ var node = svg.selectAll(".node")
 		.attr('r',r*2)
 		.attr("fill","url("+img+")")
 		.each("end",function(){
-		    d3.select(this.parentNode).attr('growing','false');
+		    d3.select(this.parentNode.parentNode).attr('growing','false');
 		});
 	    force.charge(function(d2,i2){
 		return d==d2 ? -3500 : -2500;
@@ -42,15 +42,21 @@ var node = svg.selectAll(".node")
 	})
 	.on("mouseout",function(d){
 	    d3.select(this).attr('shrink','true');
+	})
+	.on('click',function(d){
+	    
 	});
 
-var circle = node.append("circle")
+var anchor = node.append("svg:a")
+	.attr("xlink:href",function(d){return d.url;});
+
+var circle = anchor.append("circle")
 	.attr("class", "circle")
 	.attr("r", r)
 	.attr("fill","white")
 	.attr("stroke","black");
 
-var text = node.append("text")
+var text = anchor.append("text")
 	.text(function(d){return d.name;})
 	.attr("text-anchor","middle");
 
