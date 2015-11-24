@@ -33,3 +33,10 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 	text-shadow: none;
 }
+
+.web-presentation-panel{
+    background-color: #eef; /*#c59460;*/
+    border: 4px ridge #c59460;
+    color: #000;
+    text-shadow: none;
+}

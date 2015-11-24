@@ -1,5 +1,5 @@
-var width = 500,
-    height = 500,
+var width =  d3.select("#nav-map").attr('width'),
+    height = d3.select("#nav-map").attr('height'),
     r=30;
 
 var graph = {

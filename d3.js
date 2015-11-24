@@ -1,6 +1,4 @@
 var svg = d3.select("#nav-map")
-	.attr("width",width)
-	.attr("height",height);
 
 var force = d3.layout.force()
 	.size([width,height])
