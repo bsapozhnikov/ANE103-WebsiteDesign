@@ -1,10 +1,82 @@
+/*!
+ * Start Bootstrap - Blog Post HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
-.list {
-	padding: 50px 50px 50px 50px;
+body {
+    padding-top: 70px; 
+    background-color: #595959;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-
-ol {
-	margin-top: 0; margin-bottom: 100px;
+footer {
+    margin: 50px 0;
 }
 
+ul {
+	list-style-type: none;
+	padding:2px;
+	margin:0;
+}
+
+.image_text { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h3 { 
+   position: absolute; 
+   bottom: 5%; 
+   left: 5%; 
+   width: 100%; 
+   font-family: "Goudy Old Style";
+   color: white;
+}
+
+.directions {
+
+	font-size: large;
+	font-family: "Goudy Old Style";
+	margin: 20px 0;
+	color: white;
+
+}
+
+.main_pic {
+	margin: auto;
+	padding: 10px;
+}
+
+h1 {
+	font-family: "Goudy Old Style";
+	font-weight: bold;
+	color: white;
+	text-shadow: 4px 4px #990000
+}
+
+h2 {
+
+	font-family: "Goudy Old Style";
+	font-weight: bold;
+	color: white;
+	text-shadow: 1px 1px #990000
+}
+
+.well {
+	background-color: #990000;
+}
+
+.prep {
+	color: white;
+	font-size: large;
+}
+
+li {
+	font-size: large;
+	font-family: "Goudy Old Style";
+
+}
+
+p {
+	color: white;
+}

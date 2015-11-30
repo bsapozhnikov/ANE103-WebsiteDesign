@@ -1,70 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
+<html lang="en">
 
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link href="css/recipe.css" rel="stylesheet">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
 
-<h1>How to Make a Resin Cast</h1>
+    <svg id="nav-map" width="500" height="500"></svg>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- <script src="d3.superformula.min.js"></script> -->
+    <script src="setup.js"></script>
+    <script src="d3.js"></script>
 
+    <!-- Page Content -->
+    <div class="container">
 
-	<h2>Ingredients</h2>
-<!-- <div class="table"> -->
-  <table class="table">
-		<li class="list-group-item col-xs-6">19th Century plaster cast in poor condition</li>
-	    <li class="list-group-item col-xs-6">Modeling clay</li>
-	    <li class="list-group-item col-xs-6">White glue PVA</li>
-		<li class="list-group-item col-xs-6">Powdered marble or gypsum cement</li>
-		<li class="list-group-item col-xs-6">Liquid silicon (Mix equal parts A and B by volume)</li>
-		<li class="list-group-item col-xs-6">Sonite wax</li>
-		<li class="list-group-item col-xs-6">Aerosol can of Ease Release 200</li>
-		<li class="list-group-item col-xs-6">Free Form Air Epoxy Putty (Mix equal parts A and B by volume)</li>
-		<li class="list-group-item col-xs-6">Paint Primer</li>
-		<li class="list-group-item col-xs-6">Feather Light Urethene Resin (Mix equal parts A and B by volume)</li>
-		<li class="list-group-item col-xs-6">Paint</li>
-	
-  </table>
-<!-- </div> -->
+        <div class="row">
 
-<h2>Supplies</h2>
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
 
-<ol class="list-group">
-	<li class="list-group-item col-xs-6"> Table</li>
-	<li class="list-group-item col-xs-6">Small paint brushes</li>
-	<li class="list-group-item col-xs-6">Sculpting tools</li>
-	<li class="list-group-item col-xs-6">_</li>
-</ol>
+                <!-- Blog Post -->
 
-<p></p>
+                <!-- Title -->
+                <h1>How to Make a Resin Cast</h1>
 
-<h2>Directions</h2>
+                <hr>
 
-<ol class="list-group">
-	<li>Place 19th century damaged plaster cast on table.</li>
-	<li>Fill the space between the cast and the table with modeling clay and make sure the cast is completely level.</li>
-	<li>Mix up white glue and powered marble, or substitute gypsum cement for the powdered marble.</li>
-	<li>Fill any holes/chips/seams between panels of the cast with glue+marble mixture.</li>
-	<li>Correct any casting imperfections on the cast with sculpting tools.</li>
-	<li>Mix up liquid silicon (equal parts A and B) and pour silicon on the cast.</li>
-	<li>Brush the silicon into the details of the cast with an aggressive brush stroke.</li>
-	<li>Apply multiple layers of silicon to the cast, waiting approximately 20 minutes between layers so that each layer is tacky but not dry.  Apply enough layers so that there is about 3/8 of an inch of silicon on top of the cast.</li>
-	<li>Make sure that the silicon covers the sides of the cast as well and covers part of the table to make a “flange.”</li>
-	<li>Brush Sonite Wax on top of the mold surface.</li>
-	<li>Spray Ease Release 200 on top of the mold surface.</li>
-	<li>Mix up Free Form Air Epoxy Putty (Mix parts A and B). It will have consistency of play-dough.  Roll into balls and push balls on top of mold until entire mold surface is covered with putty.  You’ll have about 30 minutes to do this until the putty sets.</li>
-	<li>Remove the mother mold (putty layer).</li>
-	<li>Remove the flexible mold (silicon layer).</li>
-	<li>Place silicon layer inside mother mold.  It should fit perfectly within.</li>
-	<li>Lay down a layer of Ease Release 200 inside silicon mold.</li>
-	<li>Spray paint primer into mold as well.</li>
-	<li>Pour Feather Light Urethene Resin (Mix parts A and B) into mold and wait for it to dry.</li>
-	<li>Flip mold upside down to release Resin cast.  You’ve now created a new cast.</li>
-    <li>Paint the cast. Enjoy.</li>
-</ol>
+                <!-- Preview Image -->
+                <div class="main_pic">
+                    <center><img class="img-responsive thumbnail" src="http://media.news.harvard.edu/gazette/wp-content/uploads/2015/04/10.032515_Resin_Casts_506_570x381.jpg" alt=""></center>
+                </div>
+
+                <hr>
+
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-4 prep"><span class="glyphicon glyphicon-hourglass"></span><b>Prep time:</b> 3 days</div>
+                        <div class="col-sm-4 prep"><span class="glyphicon glyphicon-hourglass"></span><b>Dry time:</b> 2 days</div>
+                        <div class="col-sm-4 prep"><span class="glyphicon glyphicon-hourglass"></span><b>Paint time:</b> 1 week</div>
+                    </div>
+                </div>
+
+                <div class="well">
+                    <h2>Ingredients</h2>
+                    <table class="table">
+                        <li class="list-group-item col-xs-6">19th Century plaster cast in poor condition</li>
+                        <li class="list-group-item col-xs-6">Modeling clay</li>
+                        <li class="list-group-item col-xs-6">White glue PVA</li>
+                        <li class="list-group-item col-xs-6">Powdered marble or gypsum cement</li>
+                        <li class="list-group-item col-xs-6">Liquid silicon*</li>
+                        <li class="list-group-item col-xs-6">Sonite wax</li>
+                        <li class="list-group-item col-xs-6">Aerosol can of Ease Release 200</li>
+                        <li class="list-group-item col-xs-6">Free Form Air Epoxy Putty*</li>
+                        <li class="list-group-item col-xs-6">Paint Primer</li>
+                        <li class="list-group-item col-xs-6">Feather Light Urethene Resin*</li>
+                        <li class="list-group-item col-xs-6">Paint</li>
+                    </table>
+                    <p> *Mix equal parts A and B by volume.</p>
+                </div>
+
+                <hr>
+
+                <div class="well">
+                    <h2>Supplies</h2>
+                    <table class="table">
+                        <li class="list-group-item col-xs-6"> Table</li>
+                        <li class="list-group-item col-xs-6">Small paint brushes</li>
+                        <li class="list-group-item col-xs-6">Sculpting tools</li>
+                    </table>
+                </div>
+
+                <hr>
+
+                <!-- Post Content -->
+                <h2>Directions</h2>
+                <ol class="list-group col-xs-6">
+                    <li class="directions">Place 19th century damaged plaster cast on table.</li>
+                    <li class="directions">Fill the space between the cast and the table with modeling clay and make sure the cast is completely level.</li>
+                    <li class="directions">Mix up white glue and powered marble, or substitute gypsum cement for the powdered marble.</li>
+                    <li class="directions">Fill any holes/chips/seams between panels of the cast with glue+marble mixture.</li>
+                    <li class="directions">Correct any casting imperfections on the cast with sculpting tools.</li>
+                    <li class="directions">Mix up liquid silicon (equal parts A and B) and pour silicon on the cast.</li>
+                    <li class="directions">Brush the silicon into the details of the cast with an aggressive brush stroke.</li>
+                    <li class="directions">Apply multiple layers of silicon to the cast, waiting approximately 20 minutes between layers so that each layer is tacky but not dry.  Apply enough layers so that there is about 3/8 of an inch of silicon on top of the cast.</li>
+                    <li class="directions">Make sure that the silicon covers the sides of the cast as well and covers part of the table to make a “flange.”</li>
+                    <li class="directions">Brush Sonite Wax on top of the mold surface.</li>
+                    <li class="directions">Spray Ease Release 200 on top of the mold surface.</li>
+                    <li class="directions">Mix up Free Form Air Epoxy Putty (Mix parts A and B). It will have consistency of play-dough.  Roll into balls and push balls on top of mold until entire mold surface is covered with putty.  You’ll have about 30 minutes to do this until the putty sets.</li>
+                    <li class="directions">Remove the mother mold (putty layer).</li>
+                    <li class="directions">Remove the flexible mold (silicon layer).</li>
+                    <li class="directions">Place silicon layer inside mother mold.  It should fit perfectly within.</li>
+                    <li class="directions">Lay down a layer of Ease Release 200 inside silicon mold.</li>
+                    <li class="directions">Spray paint primer into mold as well.</li>
+                    <li class="directions">Pour Feather Light Urethene Resin (Mix parts A and B) into mold and wait for it to dry.</li>
+                    <li class="directions">Flip mold upside down to release Resin cast.  You’ve now created a new cast.</li>
+                    <li class="directions">Paint the cast. Enjoy.</li>
+                </ol>
+
+                <ul class="list-group col-xs-6">
+                    <li><div class="image_text thumbnail"><img src="http://media.news.harvard.edu/gazette/wp-content/uploads/2015/04/4.032515_Resin_Casts_013_570x381.jpg"><h3>Step 4</h3></div></li>
+
+                    <li><div class="image_text thumbnail"><img src="http://media.news.harvard.edu/gazette/wp-content/uploads/2015/04/3.032515_Resin_Casts_417_570x381.jpg"><h3>Step 6</h3></div></li>
+
+                    <li><div class="image_text thumbnail"><img src="http://media.news.harvard.edu/gazette/wp-content/uploads/2015/04/8.032515_Resin_Casts_481_570x381.jpg"><h3>Step 7</h3></div></li>
+
+                </ul>
+
+                <hr>
+                
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
