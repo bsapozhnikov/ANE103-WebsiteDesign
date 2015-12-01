@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/the-big-picture.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style2.css">
 	<link rel="stylesheet" type="text/css" href="css/styleslide.css">
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:900italic' rel='stylesheet' type='text/css'>
@@ -17,9 +19,47 @@
 	</script>
 </head>
 <body>
+<svg id="nav-map" width="250" height="250"></svg>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- <script src="d3.superformula.min.js"></script> -->
+    <script src="../setup.js"></script>
+    <script src="../d3.js"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> About</a> 
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Services</a>
+                    </li>
+                    <li>
+                        <a href="http://www.todaysu.com/around-the-u/white-llama-facing-ncaa-sanctions/"> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
 	<div id="top">
 	<p class="title">
-		Ancient Near East 103: Ancient Lives
+		Ancient Near East 103: Ancient Lives: the Laboratory Process
 	</p>
 	</div>
 	<div id="left">
@@ -40,27 +80,27 @@
 			</ul>
 			<ul id="issues">
 				<li id="1900">
-					<img src="images/1.png" width="256" height="256" />
+					<img src="images/lab1.jpg" width="256" height="256" />
 					<h1>STEP 1</h1>
 					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
 				</li>
 				<li id="1930">
-					<img src="images/2.png" width="256" height="256" />
+					<img src="images/lab2.jpg" width="256" height="256" />
 					<h1>STEP 2</h1>
 					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
 				</li>
 				<li id="1944">
-					<img src="images/3.png" width="256" height="256" />
+					<img src="images/lab3.jpg" width="256" height="256" />
 					<h1>STEP 3</h1>
 					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
 				</li>
 				<li id="1950">
-					<img src="images/4.png" width="256" height="256" />
+					<img src="images/lab4.jpg" width="256" height="256" />
 					<h1>STEP 4</h1>
 					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
 				</li>
 				<li id="1971">
-					<img src="images/5.png" width="256" height="256" />
+					<img src="images/lab5.jpg" width="256" height="256" />
 					<h1>STEP 5</h1>
 					<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
 				</li>
@@ -69,7 +109,21 @@
 			<a href="#" id="next">+</a>
 			<a href="#" id="prev">-</a>
 		</div>
-
+		<div id="centmid">
+			<h1>Pomegranates 101: Are they (medically) still in vogue?<br><br></h1>
+			<h2>Here, ANE 103 students tested some ancient recipes involving pomegranates:<br></h2><br>
+			<ul>
+				<li>
+					Lots and lots of things regarding pomegranates!
+				</li><br>
+				<li>
+					Lots and lots of things regarding pomegranates!
+				</li><br>
+				<li>
+					Lots and lots of things regarding pomegranates!
+				</li><br>
+			</ul>
+		</div>
 	</div>
 	
 </body>
