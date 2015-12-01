@@ -1,0 +1,10 @@
+/* Literally only dealing with the nav-map in a way that is easily changed*/
+#nav-map{
+	opacity:.6;
+	right:0;
+	display:block;
+	position:fixed;
+	margin: 0px;
+	z-index: 10;
+	overflow: visible;
+}

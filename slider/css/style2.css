@@ -20,7 +20,9 @@ p{
 	right:0;
 	display:block;
 	position:fixed;
+	margin:0px;
 	z-index: 10;
+	overflow: visible;
 }
 .title{
 	font-family:'Merriweather', serif;
@@ -41,7 +43,7 @@ p{
 }
 #center{
 	width:70%;
-	height:400px;
+	height:450px;
 	margin-left:0px;
 	position: relative;
 	left:0;

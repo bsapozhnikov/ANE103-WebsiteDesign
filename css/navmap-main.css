@@ -1,0 +1,16 @@
+/* Literally only dealing with the nav-map in a way that is easily changed*/
+body{
+	background:url(http://www.ancient.eu/uploads/images/93.jpg?v=1431036072) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+	text-align: center;
+}
+#nav-map{
+	display: inline-block;
+	margin: 0px auto;
+	width: 40%;
+	overflow: visible;
+}
