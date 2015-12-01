@@ -40,7 +40,7 @@ var setupDefs = function(){
 	    .attr('width',1)
 	    .attr('height',1)
 	    .append('svg:image')
-	    .attr('xlink:xlink:href',name+formats[name])
+	    .attr('xlink:xlink:href','http://sites.fas.harvard.edu/~ancientlives/'+name+formats[name])
 	    .attr('x',0)
 	    .attr('y',0)
 	    .attr('width',r*4)
