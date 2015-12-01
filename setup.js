@@ -4,9 +4,9 @@ var width =  d3.select("#nav-map").attr('width'),
 
 var graph = {
     "nodes":[
-	{'name':'ANE','x':width/2,'y':height/2, 'id':'ane', 'url':'index.html'},
-	{'name':'exhibits','x':width/2-50,'y':height/2, 'id':'exhibits', 'url':'slider/index2.html'},
-	{'name':'blogs','x':width/2-30,'y':height/2-50, 'id':'blogs', 'url':'webpres_mainpage.html'},
+	{'name':'ANE','x':width/2,'y':height/2, 'id':'ane', 'url':'http://sites.fas.harvard.edu/~ancientlives/index.html'},
+	{'name':'exhibits','x':width/2-50,'y':height/2, 'id':'exhibits', 'url':'http://sites.fas.harvard.edu/~ancientlives/slider/index2.html'},
+	{'name':'blogs','x':width/2-30,'y':height/2-50, 'id':'blogs', 'url':'http://sites.fas.harvard.edu/~ancientlives/webpres_mainpage.html'},
 	{'name':'casting','x':width/2-30,'y':height/2+50, 'id':'casting', 'url':'#'},
 	{'name':'lab','x':width/2+50,'y':height/2-30, 'id':'lab', 'url':'#'},
 	{'name':'paper','x':width/2+50,'y':height/2+30,'id':'paper', 'url':'#'}
