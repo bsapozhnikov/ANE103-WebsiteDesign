@@ -2,12 +2,25 @@ body{
 	width:100%;
 	height: 100%;
 	text-align:center;
+	background: url(http://www.ancient.eu/uploads/images/93.jpg?v=1431036072) no-repeat center center fixed; 
 	margin:0 0 0 0;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 p{
-	margin:0 0 0 0;
+	margin:0 0 0 5px;
 	padding: 0 0 0 0;
+	color: #fff;
 
+}
+#nav-map{
+	opacity:.6;
+	right:0;
+	display:block;
+	position:fixed;
+	z-index: 10;
 }
 .title{
 	font-family:'Merriweather', serif;
@@ -15,13 +28,14 @@ p{
 	position:relative;
 	display: block;
 	padding-top:2em;
-	color:#000;
+
+	color:#fff;
 	font-size:2em;
 }
 #top{
 	width:100%;
+	color:#fff;
 	height:100px;
-	background-color:#11b6ed;
 	padding:0,0,0,0;
 	display:block;
 }
@@ -30,26 +44,39 @@ p{
 	height:400px;
 	margin-left:0px;
 	position: relative;
+	left:0;
 	bottom:0;
-	background-color:#ed4811;
 	display:inline-block;
 	margin:0 auto;
 }
+#centmid {
+	border-radius: 10px;
+
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 200px;
+	position: relative;
+	background: rgba(34,34,34,.5);
+	}
+#centmid li{
+	text-align: left;
+	margin-left: 30px;
+}
 #left{
-	width:15%;
+	width:5%;
 	height:100%;
 	position:fixed;
 	left:0;
-margin-right:0px;
-	background-color:#b611ed;
+	margin-right:0px;
 	display:block;
 }
 #right{
-	width:15%;
+	width:10%;
 	height:100%;
 	position:fixed;
 	margin-left:0px;
 	right:0;
-	background-color:#b611ed;
 	display:block;
 }
