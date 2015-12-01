@@ -9,7 +9,7 @@ var graph = {
 	{'name':'blogs','x':width/2-30,'y':height/2-50, 'id':'blogs', 'url':'http://sites.fas.harvard.edu/~ancientlives/webpres_mainpage.html'},
 	{'name':'casting','x':width/2-30,'y':height/2+50, 'id':'casting', 'url':'#'},
 	{'name':'lab','x':width/2+50,'y':height/2-30, 'id':'lab', 'url':'http://sites.fas.harvard.edu/~ancientlives/slider/index2.html'},
-	{'name':'paper','x':width/2+50,'y':height/2+30,'id':'paper', 'url':'#'}
+	{'name':'paper','x':width/2+50,'y':height/2+30,'id':'paper', 'url':'http://sites.fas.harvard.edu/~ancientlives/term_papers.html'}
     ],
     "links":[
 	{"source":0,"target":1},
