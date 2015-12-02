@@ -6,7 +6,19 @@
 
 body {
     padding-top: 0px; 
-    background-color: #595959;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: url(http://www.ancient.eu/uploads/images/93.jpg?v=1431036072) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#full{
+	background-color: rgba(0,0,0,.5);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: 9;
 }
 
 footer {
@@ -79,4 +91,6 @@ li {
 
 p {
 	color: white;
+	font-family: serif;
+	font-size:12pt;
 }

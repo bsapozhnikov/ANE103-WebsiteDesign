@@ -18,6 +18,7 @@ jQuery.fn.timelinr = function(options){
 		datesSelectedClass: 		'selected',			// value: any class, default to selected
 		datesSpeed: 				'normal',			// value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to normal
 		issuesDiv: 					'#issues',			// value: any HTML tag or #id, default to #issues
+		timelineDiv:                '#timeline', 
 		issuesSelectedClass: 		'selected',			// value: any class, default to selected
 		issuesSpeed: 				'fast',				// value: integer between 100 and 1000 (recommended) or 'slow', 'normal' or 'fast'; default to fast
 		issuesTransparency: 		0.2,				// value: integer between 0 and 1 (recommended), default to 0.2
@@ -41,7 +42,7 @@ jQuery.fn.timelinr = function(options){
 		var heightContainer = $(settings.containerDiv).height();
 		var widthIssues = $(settings.issuesDiv).width();
 		var heightIssues = $(settings.issuesDiv).height();
-		var widthIssue = $(settings.issuesDiv+' li').width();
+		var widthIssue = $(settings.timelineDiv).width();
 		var heightIssue = $(settings.issuesDiv+' li').height();
 		var widthDates = $(settings.datesDiv).width();
 		var heightDates = $(settings.datesDiv).height();
@@ -49,7 +50,7 @@ jQuery.fn.timelinr = function(options){
 		var heightDate = $(settings.datesDiv+' li').height();
 		// set positions!
 		if(settings.orientation == 'horizontal') {	
-			$(settings.issuesDiv).width(widthIssue*howManyIssues);
+			$(settings.issuesDiv).width(widthIssue*6);
 			$(settings.datesDiv).width(widthDate*howManyDates).css('marginLeft',widthContainer/2-widthDate/2);
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
 		} else if(settings.orientation == 'vertical') {
@@ -251,6 +252,7 @@ jQuery.fn.timelinr = function(options){
 	});
 };
 
+window.onresize = jQuery.fn.timelinr;
 // autoPlay, added since 0.9.4
 function autoPlay(){
 	var currentDate = $(settings.datesDiv).find('a.'+settings.datesSelectedClass);
