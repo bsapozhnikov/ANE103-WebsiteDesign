@@ -1,7 +1,7 @@
 var svg2 = d3.select("#d3Gallery");
 
 var force2 = d3.layout.force()
-	.size([width,height])
+	.size([width2,height2])
 	.nodes(imageGraph.nodes)
 	.links(imageGraph.links)
 	.linkDistance(20)
