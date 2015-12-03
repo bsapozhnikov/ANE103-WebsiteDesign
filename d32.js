@@ -5,9 +5,9 @@ var force2 = d3.layout.force()
 	.nodes(imageGraph.nodes)
 	.links(imageGraph.links)
 	.linkDistance(20)
-	.charge(-3000)
+	.charge(-1200)
 	.friction(0.95)
-	.gravity(0.4)
+	.gravity(0.43)
 	.start();
 
 setupDefs2();
@@ -27,15 +27,19 @@ var node2 = svg2.selectAll(".node2")
 	.on("mouseover",function(d,i){
 	    var img = '#'+d.id+'Img';
 	    d3.select(this).attr('growing','true');
+	    d3.select(this).attr('big','true')
 	    //d3.select(this).select('text').style('visibility','hidden');
-	    d3.select(this).select('circle').transition()
-		.attr('r',r*2)
+	    d3.select(this).select('rect'/*'circle'*/).transition()
+	    //.attr('r',r2*scaling)
+		.attr('width',function(d){return r2*scaling*2*d.ratio;})
+		.attr('height',r2*scaling*2)
 		.attr("fill","url("+img+")")
 		.each("end",function(){
 		    d3.select(this.parentNode.parentNode).attr('growing','false');
-		});
+		})
+		.duration(500);
 	    force2.charge(function(d2,i2){
-		return d==d2 ? -3500 : -2500;
+		return d==d2 ? -50000 : -50;
 	    }).start();
 	})
 	.on("mouseout",function(d){
@@ -45,13 +49,15 @@ var node2 = svg2.selectAll(".node2")
 	    
 	});
 
-var anchor2 = node2.append("svg:a")
-	.attr("xlink:href",function(d){return d.url;});
+var anchor2 = node2.append("svg:a");
+	//.attr("xlink:href",function(d){return d.url;});
 
-var circle2 = anchor2.append("circle")
+var circle2 = anchor2.append("rect"/*"circle"*/)
 	.attr("class", "circle2")
-	.attr("r", r)
-	.attr("fill",function(d){return "url(#"+d.id+"ImgMini)"})
+//.attr("r", r2)
+	.attr("width",function(d){return r2*2*d.ratio;})
+	.attr("height",r2*2)
+	.attr("fill",function(d){return "url(#"+d.id+"ImgMini)";})
 	.attr("stroke","black");
 /*
 var text2 = anchor2.append("text")
@@ -64,8 +70,8 @@ force2.on("tick", function() {
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
     
-    circle2.attr("cx", function(d) { return d.x; })
-        .attr("cy", function(d) { return d.y; });
+    circle2.attr("x"/*"cx"*/, function(d) { return d.x-parseInt(d3.select(this).attr('width'))/2; })
+        .attr("y"/*"cy"*/, function(d) { return d.y-parseInt(d3.select(this).attr('height'))/2; });
 /*
     text2.attr("x",function(d){return d.x;})
 	.attr("y",function(d){return d.y;});
@@ -73,12 +79,14 @@ force2.on("tick", function() {
     d3.selectAll('.node2[shrink="true"][growing="false"]').each(function(d){
 	d3.select(this).attr('shrink','false');
 	//d3.select(this).select('text').style('visibility','visible');
-	d3.select(this).select('circle')
-	    .attr("fill",function(d){return "url(#"+d.id+"ImgMini)"})
+	d3.select(this).select('rect')
+	    .attr("fill",function(d){return "url(#"+d.id+"ImgMini)";})
 	    .transition()
-	    .attr('r',r);
+	//.attr('r',r2);
+	    .attr('width',function(d){return r2*2*d.ratio;})
+	    .attr('height',r2*2);
 	force2.charge(function(d2,i2){
-	    return -3000;
+	    return -1200;
 	}).start();
     });
 });
