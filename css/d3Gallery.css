@@ -1,0 +1,12 @@
+#d3Gallery{
+    display: inline-block;
+    margin: 0px auto;
+    overflow: visible;
+}
+.circle2[growing=true]{
+    z-index: 10;
+}
+.circle2{
+    z-index: 1;
+}
+
