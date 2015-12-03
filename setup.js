@@ -5,7 +5,7 @@ var width =  d3.select("#nav-map").attr('width'),
 var graph = {
     "nodes":[
 	{'name':'ANE','x':width/2,'y':height/2, 'id':'ane', 'url':'http://sites.fas.harvard.edu/~ancientlives/index.html'},
-	{'name':'exhibits','x':width/2-50,'y':height/2, 'id':'exhibits', 'url':'http://sites.fas.harvard.edu/~ancientlives/slider/index2.html'},
+	{'name':'exhibits','x':width/2-50,'y':height/2, 'id':'exhibits', 'url':'http://sites.fas.harvard.edu/~ancientlives/exhibit.html'},
 	{'name':'blogs','x':width/2-30,'y':height/2-50, 'id':'blogs', 'url':'http://sites.fas.harvard.edu/~ancientlives/webpres_mainpage.html'},
 	{'name':'casting','x':width/2-30,'y':height/2+50, 'id':'casting', 'url':'http://sites.fas.harvard.edu/~ancientlives/casting_recipe.html'},
 	{'name':'lab','x':width/2+50,'y':height/2-30, 'id':'lab', 'url':'http://sites.fas.harvard.edu/~ancientlives/slider/index2.html'},
