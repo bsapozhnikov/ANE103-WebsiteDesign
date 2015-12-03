@@ -49,17 +49,20 @@ h1,h2,h4,h5,h6 {
 	text-align: center;
 	margin-bottom: 20px;
 }
-
+	
 	#timeline {
 		border-radius: 10px;
 
 		width: 100%;
-		height: 330px;
+		height: 600px;
+		vertical-align: middle;
+		
 		overflow: hidden;
 		margin: auto;
 		padding-bottom: 10px;
 		position: relative;
 		background: rgba(34,34,34,.5);
+		display: inline-block;
 	}
 		#dates {
 			width: 80%;
@@ -89,9 +92,12 @@ h1,h2,h4,h5,h6 {
 			width: 800px ;
 			height: 350px;
 			overflow: visible;
+
+			position: absolute;
+			top: 25%;
 		}	
 			#issues li {
-				width: 16.666666666667%;
+				width: 12.5%;
 				height: 350px;
 				list-style: none;
 				float: left;
